@@ -1,59 +1,50 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 
-*{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-
-
-
-}	
-
-body{
-    font-family: 'Open Sansd', sans-serif;
-    }
-
-.contenedor{
+.contenedor {
     width: 100%;
     max-width: 1000px;
-    margin:auto;
-       
-    }
+    margin: auto;
+}
 
-/*CABECERA*/
+/* CABECERA */
 
-header{
+header {
     width: 100%;
     height: 200px;
     background-color: white;
-
-    }
-
-.logo{
-    padding: 20px 0;
-
 }
 
-.logo img{
+.logo {
+    padding: 20px 0;
+}
+
+.logo img {
     width: 600px;
     display: block;
     margin: auto;
 }
 
-/*MENU*/
+/* MENU */
 
-.menu{
-    display:flex;
+.menu {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 430px;
-    margin:auto;
-    
-    }
+    margin: auto;
+}
 
-.menu a{
+.menu a {
     color: #7a7a7a;
     text-decoration: none;
     text-transform: uppercase;
@@ -61,54 +52,49 @@ header{
     font-weight: 300;
     padding: 10px;
     margin: 10px;
-    }
+}
 
-
-
-.menu a:hover{
+.menu a:hover {
     color: #1da413;
-    }
+}
 
 /* fin de cabecera */
 
-
 /* Banner Principal */
 
-.banner{
+.banner {
     width: 100%;
-    height: 300px;/*tamaño de la imagen de fondo*/
+    height: 300px; /* tamaño de la imagen de fondo */
     background-image: url(../img/estibadetaconacional.png);
     background-position: center;
     background-size: cover;
-    
-    }
+}
 
-.banner > div{
+.banner > div {
     width: 100%;
     height: 100%;
     background-color: rgba(209, 219, 189, 0.5);
     margin-top: 30px;
-    }
+}
 
-.llamada-accion{
+.llamada-accion {
     text-align: center;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-
     height: 100%;
 }
 
-.llamada-accion p{
+.llamada-accion p {
     color: white;
     font-size: 24px;
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 20px;
-    }
+}
 
-.llamada-accion h2{
+.llamada-accion h2 {
     font-size: 42px;
     color: white;
     width: 100%;
@@ -116,9 +102,9 @@ header{
     background-color: rgba(255, 255, 255, 0.4);
     max-width: 470px;
     margin: auto;
-    }
+}
 
-.llamada-accion a{
+.llamada-accion a {
     padding: 10px 40px;
     background-color: #1da413;
     color: white;
@@ -127,9 +113,9 @@ header{
     text-transform: uppercase;
     margin-top: 35px;
     transition: all 0.3s ease-in-out;
-    }
+}
 
-.llamada-accion a:hover{
+.llamada-accion a:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -137,205 +123,225 @@ header{
 
 /* Seccion de Bienvenida */
 
-.bienvenidos{
+.bienvenidos {
     width: 100%;
     background-color: #3e606f;
     color: #ffffff;
     margin-top: 2px;
     text-align: center;
     padding: 40px 0;
-    }
+}
 
-.bienvenidos h3{
+.bienvenidos h3 {
     font-size: 16px;
     padding-top: 35px;
     padding-bottom: 30px;
-    }
+}
 
-.bienvenidos p{
+.bienvenidos p {
     font-size: 16px;
     padding-bottom: 35px;
     line-height: 1.7em;
     max-width: 370px;
     margin: 0 auto;
-    
 }
 
-/* fin de seccion de bienvenida */  
+/* fin de seccion de bienvenida */
 
 /* Seccion sobre nosotros */
 
-.nosotros{
+.nosotros {
     padding-bottom: 80px;
-
 }
 
-.nosotros > .contenedor{
+.nosotros > .contenedor {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
 }
 
-.foto-producto{
+.foto-producto {
     width: 100%;
-    max-width: 570px;   
+    max-width: 570px;
 }
 
-.foto-producto img{
+.foto-producto img {
     width: 100%;
-    }
+}
 
-.conocenos{
+.conocenos {
     text-align: center;
     padding: 15px 0;
     max-width: 570px;
-    }
+}
 
-.conocenos p:nth-child(1){
+.conocenos p:nth-child(1) {
     font-size: 14px;
     color: #3c1c22;
     padding-bottom: 20px;
     border-bottom: 1px solid #a2a2a2;
-    }
+}
 
-.conocenos h3{
+.conocenos h3 {
     padding-top: 20px;
     padding-bottom: 30px;
-    color:#1da413;
+    color: #1da413;
     font-size: 18px;
 }
 
-.conocenos p:nth-child(3){
+.conocenos p:nth-child(3) {
     font-size: 16px;
     color: #133f10;
     padding-bottom: 25px;
-    }
+}
 
-.conocenos p:nth-last-child(4){
+.conocenos p:nth-last-child(4) {
     font-size: 14px;
     color: #0d7506;
     padding-bottom: 20px;
-    }
+}
 
-.conocenos a{
+.conocenos a {
     font-size: 15px;
     color: #1da413;
+}
+
+@media all and (min-width: 769px) {
+    .nosotros {
+        padding-top: 20px;
     }
-
-
-
-@media all and (min-width:769px){
-    .nosotros{
-        padding-top: 50px;
-    }
-    .foto-producto{
+    .foto-producto {
         margin-right: 20px;
     }
-    .conocenos{
+    .conocenos {
         padding-left: 20px;
     }
 }
 
 /* fin de seccion sobre nosotros */
 
-/* Seccion Pie de Pagina */
+/* Nueva Sección de Fotos */
+.foto-alineadas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px; /* Reduce el espacio entre las fotos */
+    padding: 10px 0; /* Reduce el espacio alrededor de la sección */
+}
 
-.top-footer{
+.foto-alineadas img {
+    width: 24%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Sección centrando el contenido */
+.centrarContenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px; /* Mantén el padding interno reducido */
+    margin: 0; /* Asegúrate de que no haya margen externo */
+}
+
+.centrarContenido img {
+    margin-bottom: 5px; /* Ajusta el espacio debajo de la imagen */
+}
+
+.centrarContenido h2 {
+    margin: 5px 0; /* Ajusta el espacio alrededor del título */
+}
+
+.centrarContenido p {
+    margin: 5px 0; /* Ajusta el espacio alrededor de los párrafos */
+}
+
+/* Sección Pie de Página */
+.top-footer {
     background-color: #3e606f;
     height: 25px;
-    }
+    margin-bottom: 0; /* Asegúrate de que no haya margen extra */
+}
 
-    .center-footer{
-        background-color: #152d37;
-        }
+.center-footer {
+    background-color: #152d37;
+    padding-bottom: 10px; /* Ajusta el padding si es necesario */
+}
 
-    .center-footer .contenedor{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        }
+.center-footer .contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-    .center-footer .widget{
-        text-align: center;
-        padding-top: 20px;
-        
-        color:#7a7a7a;
-        max-width: 270px;
-        margin: 0 auto;
-        }
+.center-footer .widget {
+    text-align: center;
+    padding-top: 10px; /* Ajusta el padding según sea necesario */
+    color: #7a7a7a;
+    max-width: 270px;
+    margin: 0 auto;
+}
 
-    .center-footer .widget h4{
-        padding-bottom: 35px;
-        font-size: 18px;
+.center-footer .widget h4 {
+    padding-bottom: 20px; /* Ajusta el padding debajo del título */
+    font-size: 18px;
+}
 
-    }
+.center-footer .widget p {
+    font-size: 14px;
+    padding-bottom: 10px; /* Ajusta el padding debajo del párrafo */
+}
 
-    .center-footer .widget p{
-        font-size: 14px;
-        padding-bottom: 20px;
-    }
+.bottom-footer {
+    background-color: #193441;
+    height: 25px;
+    margin-top: 0; /* Asegúrate de que no haya margen extra */
+}
 
-    .bottom-footer{
-        background-color: #193441;
-        height: 25px;
-              
-        }
+.bottom-footer p {
+    color: #7a7a7a;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto; /* Asegúrate de que el margen sea cero */
+}
 
-    .bottom-footer p{
-        color:#7a7a7a;
-        font-size: 12px;
-        text-align: center;
-        margin: 0 auto;
-       
-    }
 
-    /* Banner Productos */
 
-    .productos{
-        width: 100%;
-        height: 500px;
-        background-image: url(../img/productos.png);
-        background-position: center;
-        background-size: cover;
-        
-        }
-    
-    .productos > div{
-        width: 100%;
-        height: 100%;
-        background-color: rgba(209, 219, 189, 0.5);
-        margin-top: 30px;
-        }
+/* Banner Productos */
 
-    /* Sección de Productos */
+.productos {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/productos.png);
+    background-position: center;
+    background-size: cover;
+}
 
-    /* Estilos para la sección de productos */
+.productos > div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 219, 189, 0.5);
+    margin-top: 30px;
+}
+
+/* Sección de Productos */
+
 .productos-lista {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);/* 2 columnas */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
     gap: 10px; /* Espacio entre los productos */
     padding: 40px 40px;
 }
-    
-
 
 .producto {
     text-align: left; /* Cambiar alineación a la izquierda */
     border: 1px solid #ccc;
     padding: 15px; /* Reducir el padding interno del producto */
     border-radius: 8px;
-   
 }
-
-.producto img {
-    width: 100%;
-    height: 200px;
-    
-}
-
-/* Vamos alinear las imagenes de los productos */
 
 .producto img {
     width: 100%;
@@ -379,17 +385,17 @@ header{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.9);
-  }
-  
-  .modal-content {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-  }
-  
-  .close {
+}
+
+.close {
     position: absolute;
     top: 30px;
     right: 35px;
@@ -397,15 +403,16 @@ header{
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-  }
-  
-  .close:hover, .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  #caption {
+}
+
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -413,7 +420,7 @@ header{
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-  }
+}
 
 /* fin de sección de productos */
 
