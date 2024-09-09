@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Estibas de Antioquia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="contenedor">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="Estibas de Antioquia">
+                </a>
+            </div>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="productos">
+        <div>
+            <div class="contenedor llamada-accion">
+                <h1>ESTIBAS Y SERVICIOS</h1>
+                <p>Todos nuestros productos y subproductos son elaborados con maderas cultivables cumpliendo con las normas ambientales legales vigentes, debidamente soportadas con sus registros, permisos y salvoconductos.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de Productos -->
+    <section class="productos-lista">
+       
+            <div class="producto">
+                <img src="img/productos/taconacional.jpeg" alt="Estiba de Taco Nacional"onclick="openModal(this)">
+                <h3>ESTIBA DE TACO NACIONAL</h3>
+                <p>Estiba ideal para uso interno, movimientos en bodegas y plantas de un solo uso (primer piso) ya que permite el ingreso de montacargas y estibadores por sus 4 costados.</p>
+            </div>
+            <div class="producto">
+                <img src="img/productos/soportenacional.png" alt="Estiba de Soporte Nacional"onclick="openModal(this)">
+                <h3>ESTIBA DE SOPORTE NACIONAL</h3>
+                <p>Estiba ideal para uso interno, movimientos en bodegas y plantas de más de 1 nivel como estanterías o remontadas, esta estiba permite el ingreso de montacargas y estibadores por 2 lados.</p>
+            </div>
+            <div class="producto">
+                <img src="img/productos/tacoexportacion.png" alt="ESTIBA DE TACO EXPORTACIÓN"onclick="openModal(this)">
+                <h3>ESTIBA DE TACO EXPORTACIÓN</h3>
+                <p>Estiba de taco elaborada bajo la norma NIMF 15 ICA o sanitización, cumpliendo así con el requisito para exportación de productos con embalajes en madera, esta estiba denominada europea, permite el ingreso de montacargas y estibadores por sus 4 lados. Es una estiba con sello en parte visible y con certificado escrito del ICA.</p>
+            </div>
+            <div class="producto">
+                <img src="img/productos/soporteexportacion.png" alt="ESTIBA DE SOPORTE EXPORTACIÓN"onclick="openModal(this)">
+                <h3>ESTIBA DE SOPORTE EXPORTACIÓN</h3>
+                <p>Estiba de soporte elaborada bajo la norma NIMF 15 ICA o sanitización, cumpliendo así con el requisito para exportación de productos con embalajes en madera, esta estiba denominada americana, permite el ingreso de montacargas y estibadores por dos lados, uno enfrente del otro, también tiene opción de ingreso por cuatro lados solo con montacargas. Es una estiba con sello en la parte visible y con certificado escrito del ICA.</p>
+            </div>
+            <div class="producto">
+                <img src="img/productos/huacalnacional.png" alt="HUACAL NACIONAL"onclick="openModal(this)">
+                <h3>HUACAL NACIONAL</h3>
+                <p>Ideal para la protección de productos y mercancías, este empaque garantiza a lo largo de la cadena logistica la privacidad y no alteración del producto interno.</p>
+            </div>
+            <div class="producto">
+                <img src="img/productos/huacalexportacion.png" alt="HUACAL DE EXPORTACIÓN"onclick="openModal(this)">
+                <h3>HUACAL EXPORTACIÓN</h3>
+                <p>Huacal elaborado bajo la norma NIMF 15 ICA o sanitización, cumpliendo así con el requisito para exportación de productos con embalajes en madera, este huacal garantiza la protección de productos y mercancías, a lo largo de la cadena logística, la privacidad y no alteración del producto interno. Es un huacal con sello en la parte visible y con certificado escrito del ICA.</p>
+            </div>
+            <div class="producto">
+                <img src="img/productos/kit.png" alt="KIT DE ESTIBAS"onclick="openModal(this)">
+                <h3>KIT DE ESTIBAS</h3>
+                <p>Kits de estibas para plantas que posee la infraestructura de ensamble.</p>
+            </div>
+           <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModal" alt="Imagen ampliada del producto">
+        <div id="caption"></div>
+
+</div>
+
+<!-- Agrega el JavaScript aquí -->
+
+<script>
+    // Función para abrir el modal con la imagen seleccionada
+
+    function openModal(img) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("imgModal");
+        var captionText = document.getElementById("caption");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+        
+    </section>
+    <div class="centrarContenido">
+        <img src="img/productos/ica.jpeg" alt="certificación">
+
+        <h2>SANITIZACIÓN PARA EXPORTACIÓN</h2>
+
+        <p><p>Contamos con el registro ICA para prestarles el servicio de Sanitización de estibas y huacales para cumplir con el requisito de exportación.</p>
+    </div>
+
+
+    
+    <!-- Pie de Página -->
+   
+<footer>
+    <div class="top-footer"></div>
+    <div class="center-footer">
+        <div class="contenedor" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div class="widget" style="flex: 1; min-width: 200px;">
+                <h4>MISIÓN</h4>
+                <p>Proveer estibas y huacales de calidad, en madera, para generar un valor a sus accionistas y empleados.</p>
+            </div>
+            <div class="widget" style="flex: 1; min-width: 200px;">
+                <h4>VISIÓN</h4>
+                <p>Para el 2025 consolidarnos como los proveedores preferidos en el mercado de fabricación y comercialización de estibas, huacales y productos de madera con los más altos estándares de calidad y aumentando la viabilidad del negocio.</p>
+            </div>
+            <div class="widget" style="flex: 1; min-width: 200px;">
+                <h4>POLÍTICA DE CALIDAD</h4>
+                <p>Cumplir con los requisitos pactados con el cliente. Dar respuesta oportuna a los requerimientos de los clientes. Tener planes de contingencia para requerimientos inesperados de último momento. Mejorar continuamente el talento humano e infraestructura. Trabajar de la mano con el medio ambiente y los requisitos legales. Hacer un ambiente comercial, laboral, honesto y con virtudes.</p>
+            </div>
+            <div class="widget" style="flex: 1; min-width: 200px;">
+                <h4>Sanitización para Exportación</h4>
+                <p>Contamos con el registro ICA para prestarles el servicio de Sanitización de estibas y huacales para cumplir con el requisito de exportación.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer" style="text-align: center; padding: 20px 0;">
+        <p>Estibas de Antioquia © 2024. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
